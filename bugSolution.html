@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv"></div>
+  <script>
+    // Iterate through the NodeList to access and modify individual elements.
+    const divs = document.querySelectorAll('div');
+    divs.forEach(div => {
+        div.setAttribute('data-custom', 'test'); // Proper way to add custom data
+    });
+  </script>
+</body>
+</html>
