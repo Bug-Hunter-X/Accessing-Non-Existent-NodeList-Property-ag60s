@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv"></div>
+  <script>
+    // This code attempts to access a non-existent property of a node list.
+    document.querySelectorAll('div').myNonExistentProperty = 'test'; 
+  </script>
+</body>
+</html>
